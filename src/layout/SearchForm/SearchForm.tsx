@@ -11,6 +11,7 @@ function SearchForm() {
                 <SearchDeparture />
                 <SearchDestination />
                 <DateRange />
+                <input type="submit" className="SubmitButton" value="Search"/>
             </div>
         </DepartureContextProvider>
     );
