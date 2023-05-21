@@ -10,7 +10,7 @@ function App() {
   return (
     <TripTypeContextProvider>
       <form onSubmit={handleSubmit} className="Navbar-Container">
- 
+        <TopContainer />
       </form>
     </TripTypeContextProvider>
   );
