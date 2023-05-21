@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useContext } from "react"
 import { DepartureContextCreate } from "../../context/DepartureContext" 
-import { act } from "react-dom/test-utils"
 
 function SearchDeparture() {
 
@@ -17,9 +16,6 @@ function SearchDeparture() {
                 const suggestionTemplateFromInput = data.map((obj: any) =>
                     {return {name: obj.unique_name, id: obj.city_id}})
                 setSuggestions(suggestionTemplateFromInput)
-                /*act(() => {
-                    setSuggestions(suggestionTemplateFromInput);
-                  });*/
             }
         })
         .catch(function (error) {
@@ -36,9 +32,6 @@ function SearchDeparture() {
                     const popularSuggestionTemplate = data.map((obj: any) =>
                         {return {name: obj.unique_name, id: obj.id}})
                     setSuggestions(popularSuggestionTemplate)
-                    /*act(() => {
-                        setSuggestions(popularSuggestionTemplate);
-                      });*/
                 }
             })
             .catch(function (error) {
