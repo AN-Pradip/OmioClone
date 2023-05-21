@@ -1,3 +1,5 @@
+import {TripTypeContextProvider} from "./context/TripTypeContext"
+import TopContainer from "./layout/TopContainer/TopContainer";
 function App() {
 
   //prevent refresh & set searched pokemon name to lower case
@@ -6,9 +8,11 @@ function App() {
   }
 
   return (
+    <TripTypeContextProvider>
       <form onSubmit={handleSubmit} className="Navbar-Container">
  
       </form>
+    </TripTypeContextProvider>
   );
 }
 
