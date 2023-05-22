@@ -1,5 +1,6 @@
 import {TripTypeContextProvider} from "./context/TripTypeContext"
 import TopContainer from "./layout/TopContainer/TopContainer";
+import SearchForm from "./layout/SearchForm/SearchForm";
 function App() {
 
   //prevent refresh & set searched pokemon name to lower case
@@ -11,6 +12,16 @@ function App() {
     <TripTypeContextProvider>
       <form onSubmit={handleSubmit} className="Navbar-Container">
         <TopContainer />
+        <SearchForm />
+        <div className="AccomodationContainer">
+          <label className="switch">
+            <input type="checkbox" />
+            <span className="slider round"></span>
+          </label>
+          <span className="accomodationLabel">
+            Find my accomodation
+          </span>
+        </div>
       </form>
     </TripTypeContextProvider>
   );
