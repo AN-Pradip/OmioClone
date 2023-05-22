@@ -1,6 +1,7 @@
-import {TripTypeContextProvider} from "./context/TripTypeContext"
 import TopContainer from "./layout/TopContainer/TopContainer";
+import {TripTypeContextProvider} from "./context/TripTypeContext"
 import SearchForm from "./layout/SearchForm/SearchForm";
+
 function App() {
 
   //prevent refresh & set searched pokemon name to lower case
