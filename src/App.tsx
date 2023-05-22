@@ -1,6 +1,7 @@
 import TopContainer from "./layout/TopContainer/TopContainer";
 import {TripTypeContextProvider} from "./context/TripTypeContext"
 import SearchForm from "./layout/SearchForm/SearchForm";
+import LoadingScreen from "./components/LoadingScreen/LoadingScreen";
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
 
   return (
     <TripTypeContextProvider>
+      <LoadingScreen />
       <form onSubmit={handleSubmit} className="Navbar-Container">
         <TopContainer />
         <SearchForm />
