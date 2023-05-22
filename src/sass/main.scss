@@ -4,5 +4,15 @@
 //TYPOGRAPHY
 
 //COMPONENTS
+@import "./components/dropdown";
+@import "./components/title";
+@import "./components/options";
+@import "./components/button";
+@import "./components/searchInput";
+@import "./components/dateInput";
 
 //LAYOUT
+@import "./layout/navBar";
+@import "./layout/page";
+@import "./layout/topContainer";
+@import "./layout/searchForm";

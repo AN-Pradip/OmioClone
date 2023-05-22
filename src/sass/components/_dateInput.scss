@@ -1,0 +1,55 @@
+.DateContainer{
+    height: 2.5rem;
+    background-color: #f1f2f6;
+    display: flex;
+    margin-top: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.DateInput{
+    opacity: 0;
+    //background: transparent;
+    position: absolute;
+}
+.DateInput::-webkit-calendar-picker-indicator{
+    position: absolute;
+    width: 20vw;
+}
+.ArrivalDateContainer, .LeavingDateContainer{
+    width: 37.5vw;
+    display: flex;
+    align-items: center;
+    .fa-calendar{
+        font-size: 1.5rem;
+        margin-left: 0.5rem;
+        color: #a1a9c3;
+    }
+    .dateLabel{
+        margin-left: 0.6rem;
+        .addReturn{
+            color: #a1a9c3;
+        }
+    }
+}
+.ArrivalDateContainer{
+    border-right: solid 1px lightgrey;
+}
+.LeavingDateContainer{
+    justify-content: flex-end;
+}
+#returnDateLabel{
+    margin-right: 1rem;
+    //height: 2rem;
+}
+@media screen and (min-width: 768px) {
+    .DateContainer{
+        margin: 0 0.2rem;
+        border-radius: 0.5rem;
+    }
+    .ArrivalDateContainer, .LeavingDateContainer{
+        width: 10.5vw;
+        .dateLabel{
+            font-size: 0.8rem;
+        }
+    }
+}

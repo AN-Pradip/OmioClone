@@ -1,0 +1,28 @@
+button{
+    border-radius: 10rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: rgb(94, 144, 204);
+    border: 1px solid rgb(94, 144, 204);
+}
+.SubmitButton{
+    width: 75vw;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #fa6b6b;
+    color: white;
+    margin-top: 0.5rem;
+    &:hover{
+        filter: brightness(150%);
+    }
+}
+@media screen and (min-width: 768px) {
+    .SubmitButton{
+        width: 10.5vw;
+        margin: 0 0.2rem;
+    }
+}
