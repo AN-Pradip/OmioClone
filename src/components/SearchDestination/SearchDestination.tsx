@@ -5,7 +5,7 @@ function SearchDestination() {
     const [Suggestions, setSuggestions] = React.useState([{name: "paris", id: 0}])
     const DepartureContext = useContext(DepartureContextCreate)
     useEffect(() => {
-        if(DepartureContext.Departure?.city != ""){
+        if(DepartureContext.Departure?.city !== ""){
             fetch(`https://api.comparatrip.eu/cities/popular/from/${DepartureContext.Departure?.city}/5`)
             .then(response => response.json())
             .then((data) => {

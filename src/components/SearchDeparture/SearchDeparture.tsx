@@ -45,7 +45,7 @@ function SearchDeparture() {
         useEffect(() => {
             // Function for click event
             function handleOutsideClick(event: any) {
-              if (!ref.current.contains(event.target) && Suggestions[0].name != undefined && departureInputAutoSelect && Suggestions ) {
+              if (!ref.current.contains(event.target) && Suggestions[0].name !== undefined && departureInputAutoSelect && Suggestions ) {
                 departureInputAutoSelect.value = Suggestions[0].name.charAt(0).toUpperCase() + Suggestions[0].name.slice(1);
                 DepartureContext.setDeparture({city: Suggestions[0].name})
               }
